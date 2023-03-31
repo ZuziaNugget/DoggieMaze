@@ -1,0 +1,11 @@
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\bin\Debug\CollisionDetectionDemo.exe.config
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\bin\Debug\CollisionDetectionDemo.exe
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\bin\Debug\CollisionDetectionDemo.pdb
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\obj\Debug\CollisionDetectionDemo.csproj.AssemblyReference.cache
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\obj\Debug\CollisionDetectionDemo.csproj.SuggestedBindingRedirects.cache
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\obj\Debug\CollisionDetectionDemo.Properties.Resources.resources
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\obj\Debug\CollisionDetectionDemo.csproj.GenerateResource.cache
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\obj\Debug\CollisionDetectionDemo.csproj.CoreCompileInputs.cache
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\obj\Debug\CollisionDetectionDemo.exe
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\obj\Debug\CollisionDetectionDemo.pdb
+C:\Users\Zuzanna\Desktop\Eigen projecten\C#\MAUI\CollisionDetectionDemo\CollisionDetectionDemo\obj\Debug\CollisionDetectionDemo.MazeGame.resources
