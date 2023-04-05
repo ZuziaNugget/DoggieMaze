@@ -151,7 +151,7 @@ namespace CollisionDetectionDemo
             this.pictureBox114 = new System.Windows.Forms.PictureBox();
             this.pictureBox115 = new System.Windows.Forms.PictureBox();
             this.Finish = new System.Windows.Forms.PictureBox();
-            this.pictureBox116 = new System.Windows.Forms.PictureBox();
+            this.Door1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Doggie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -269,7 +269,7 @@ namespace CollisionDetectionDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox114)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox115)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Finish)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox116)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Door1)).BeginInit();
             this.SuspendLayout();
             // 
             // Doggie
@@ -1451,14 +1451,17 @@ namespace CollisionDetectionDemo
             this.Finish.TabStop = false;
             this.Finish.Tag = "Food";
             // 
-            // pictureBox116
+            // Door1
             // 
-            this.pictureBox116.Location = new System.Drawing.Point(120, 60);
-            this.pictureBox116.Name = "pictureBox116";
-            this.pictureBox116.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox116.TabIndex = 123;
-            this.pictureBox116.TabStop = false;
-            this.pictureBox116.Tag = "Question1";
+            this.Door1.BackColor = System.Drawing.Color.Transparent;
+            this.Door1.Image = ((System.Drawing.Image)(resources.GetObject("Door1.Image")));
+            this.Door1.Location = new System.Drawing.Point(120, 61);
+            this.Door1.Name = "Door1";
+            this.Door1.Size = new System.Drawing.Size(60, 58);
+            this.Door1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Door1.TabIndex = 123;
+            this.Door1.TabStop = false;
+            this.Door1.Tag = "Door";
             // 
             // MazeGame
             // 
@@ -1466,7 +1469,7 @@ namespace CollisionDetectionDemo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1200, 780);
-            this.Controls.Add(this.pictureBox116);
+            this.Controls.Add(this.Door1);
             this.Controls.Add(this.Doggie);
             this.Controls.Add(this.pictureBox115);
             this.Controls.Add(this.pictureBox114);
@@ -1705,7 +1708,7 @@ namespace CollisionDetectionDemo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox114)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox115)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Finish)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox116)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Door1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1830,7 +1833,7 @@ namespace CollisionDetectionDemo
         private PictureBox pictureBox114;
         private PictureBox pictureBox115;
         private PictureBox Finish;
-        private PictureBox pictureBox116;
+        private PictureBox Door1;
     }
 }
 

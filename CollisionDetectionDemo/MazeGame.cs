@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace CollisionDetectionDemo
 {
+    //the interger for movement speed and the booleans that tell you if a direction is true or false
     public partial class MazeGame : Form
     {
         bool moveLeft, moveRight, moveUp, moveDown;
@@ -23,6 +24,7 @@ namespace CollisionDetectionDemo
 
         private void MainTimerEvent(object sender, EventArgs e)
         {
+            //moves entity arround with a sertain speed
             if (moveLeft == true && Doggie.Left > 5)
             {
                 Doggie.Left -= speed;
@@ -40,6 +42,7 @@ namespace CollisionDetectionDemo
                 Doggie.Top += speed;
             }
 
+            //detects collision and then prevents player from moving through walls
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Tag == "Object")
@@ -74,6 +77,43 @@ namespace CollisionDetectionDemo
 
             foreach (Control x in this.Controls)
             {
+                if(x is PictureBox && (string)x.Tag == "Door")
+                {
+                    if(Doggie.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        timer1.Stop();
+
+                        if (moveLeft == true)
+                        {
+                            Doggie.Left += speed;
+                        }
+                        if (moveRight == true)
+                        {
+                            Doggie.Left -= speed;
+                        }
+                        if (moveUp == true)
+                        {
+                            Doggie.Top += speed;
+                        }
+                        if (moveDown == true)
+                        {
+                            Doggie.Top -= speed;
+                        }
+
+                        DialogResult userChoiseFinish = MessageBox.Show("You did it!!!\nDoggie has been fed?", "", MessageBoxButtons.YesNo);
+                        if (userChoiseFinish == DialogResult.Yes)
+                        {
+                            timer1.Start();
+                            x.Dispose();
+                        }
+                        if(userChoiseFinish == DialogResult.No)
+                        {
+                            timer1.Start();
+                        }
+                    }
+                }
+
+
                 if (x is PictureBox && (string)x.Tag == "Food")
                 {
                     if (Doggie.Bounds.IntersectsWith(x.Bounds))
@@ -114,11 +154,9 @@ namespace CollisionDetectionDemo
         }
 
 
-        //moves entity when arrow key down is pressed
+        //MazeGame_KeyDown moves entity when arrow keys are pressed
         private void MazeGame_KeyDown(object sender, KeyEventArgs e)
         {
-            
-
             if (e.KeyCode == Keys.Left)
             {
                 moveLeft = true;
@@ -137,6 +175,7 @@ namespace CollisionDetectionDemo
             }
         }
 
+        //MazeGame_KeyUp stops entity from moving when arrow keys aren't pressed
         public void MazeGame_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left)
